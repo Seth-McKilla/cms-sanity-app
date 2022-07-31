@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 
 export const config = {
-  matcher: ["/", "/([^/.]*)", "/home/posts/[slug]"],
+  matcher: ["/", "/([^/.]*)", "/posts/:path*"],
 };
 
 export default function middleware(req) {
